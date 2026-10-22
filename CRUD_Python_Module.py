@@ -6,17 +6,14 @@ from bson.objectid import ObjectId
 class AnimalShelter(object): 
     """ CRUD operations for Animal collection in MongoDB """ 
 
-    def __init__(self): 
+    def __init__(self, USER, PASS): 
         # Initializing the MongoClient. This helps to access the MongoDB 
         # databases and collections. This is hard-wired to use the aac 
         # database, the animals collection, and the aac user. 
         # 
-        # You must edit the password below for your environment. 
         # 
         # Connection Variables 
         # 
-        USER = 'aacuser' 
-        PASS = 'JayJay81' 
         HOST = 'localhost' 
         PORT = 27017 
         DB = 'aac' 
